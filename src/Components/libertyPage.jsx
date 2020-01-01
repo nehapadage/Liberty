@@ -207,28 +207,107 @@ class libertyPage extends Component {
                             <div style={{
                                 display: 'flex',
                                 flexdirection: 'row',
-                            justifyContent:'space-between'}}>
+                                justifyContent: 'space-between'
+                            }}>
                                 <h3>5896</h3>
-                            <h3>1596</h3>
-                            <h3>7896</h3>
+                                <h3>1596</h3>
+                                <h3>7896</h3>
+                            </div>
+                            <div style={{
+                                display: 'flex',
+                                flexdirection: 'row',
+                                justifyContent: 'space-between', fontSize: '12px'
+                            }}>
+                                <div>Posts</div>
+                                <div>Followers</div>
+                                <div>Likes</div>
+                            </div>
                         </div>
+                    </Card>
+                    <Card style={{ margin: '1em', width: '22%', padding: '3%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
+                        <div className="d-flex flex-column">
+                            <Card.Body id="name3">Top Products</Card.Body>
+                            <Card.Body id="name4">598,486</Card.Body>
+                            <Card.Body id="name11">6.5% change from today</Card.Body>
+
+                            <Card.Body id="bar1"></Card.Body>
+
+                            <Card.Body id="name3">Support Cases</Card.Body>
+                            <Card.Body id="name4">323,360</Card.Body>
+                            <Card.Body id="name11">2.5% change from yesterday</Card.Body>
+
+                        </div>
+                    </Card>
+                    <Card style={{ margin: '1em', width: '23%', padding: '3%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
+                        <div className="d-flex flex-column">
                         <div style={{
                                 display: 'flex',
                                 flexdirection: 'row',
-                            justifyContent:'space-between',fontSize:'12px'}}>
-                                <div>Posts</div>
-                            <div>Followers</div>
-                            <div>Likes</div>
+                                justifyContent: 'space-between',
+                            }}>
+                                <h3>6,256</h3>
+                                <h3 style={{marginLeft:'7.5em'}}>8569</h3>
+                               
+                            </div>
+                            <div style={{
+                                display: 'flex',
+                                flexdirection: 'row',
+                                // justifyContent: 'space-around',
+                                 fontSize: '12px'
+                            }}>
+                                <div>Total sales</div>
+                                <div style={{marginLeft:'9.5em'}}>Open Campaign</div>
+                              
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div style={{
+                                display: 'flex',
+                                flexdirection: 'row',
+                                justifyContent: 'space-between',
+                            }}>
+                                <h3>5136</h3>
+                                <h3 style={{marginLeft:'7.5em'}}>4596</h3>
+                               
+                            </div>
+                            <div style={{
+                                display: 'flex',
+                                flexdirection: 'row',
+                                // justifyContent: 'space-around',
+                                 fontSize: '12px'
+                            }}>
+                                <div>Online Sales</div>
+                                <div style={{marginLeft:'10.5em'}}>Store Sales</div>
+                              
+                            </div>
+
                         </div>
-                        </div>
                     </Card>
-                <Card style={{ margin: '1em', width: '22%', padding: '3%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
-                    xyz
+                </div>
+
+
+                <div id="cards1">
+                <Card style={{ margin: '1em', width: '90%', padding: '0.5%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
+                    abc
                     </Card>
-                <Card style={{ margin: '1em', width: '22.5%', padding: '3%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
-                    pqr
-                    </Card>
-            </div>
+                </div>
 
 
 
