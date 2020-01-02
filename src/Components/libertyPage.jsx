@@ -24,8 +24,11 @@ import Navbar from 'react-bootstrap/Navbar'
 import PeopleIcon from '@material-ui/icons/People';
 import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
 import DonutLargeOutlinedIcon from '@material-ui/icons/DonutLargeOutlined';
+import GpsFixedIcon from '@material-ui/icons/GpsFixed';
 // import Navbar from 'reactstrap';
 import './libertyPage.css'
+
+
 
 
 const theme = createMuiTheme({
@@ -93,7 +96,7 @@ class libertyPage extends Component {
                             </div>
 
                             <div id="main2">
-
+                                
                                 <div variant="contained" style={{ color: "white" }} id="buton">
                                     <div id="title">
                                         <DesktopWindowsIcon />
@@ -182,7 +185,7 @@ class libertyPage extends Component {
                         </Card>
 
                         <Card style={{ width: '25%', padding: '3%', border: '1px solid #d5dcec', display: 'flex', flexDirection: 'row' }}>
-                            <DonutLargeOutlinedIcon color="primary" fontSize="large" />
+                            <GpsFixedIcon color="primary" fontSize="large" />
                             <div style={{ marginLeft: '2em' }}>
                                 <Card.Body id='text'>Total Sales</Card.Body>
                                 <Card.Body id="num">61,119</Card.Body>
@@ -240,24 +243,24 @@ class libertyPage extends Component {
                     </Card>
                     <Card style={{ margin: '1em', width: '23%', padding: '3%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
                         <div className="d-flex flex-column">
-                        <div style={{
+                            <div style={{
                                 display: 'flex',
                                 flexdirection: 'row',
                                 justifyContent: 'space-between',
                             }}>
                                 <h3>6,256</h3>
-                                <h3 style={{marginLeft:'7.5em'}}>8569</h3>
-                               
+                                <h3 style={{ marginLeft: '7.5em' }}>8569</h3>
+
                             </div>
                             <div style={{
                                 display: 'flex',
                                 flexdirection: 'row',
                                 // justifyContent: 'space-around',
-                                 fontSize: '12px'
+                                fontSize: '12px'
                             }}>
                                 <div>Total sales</div>
-                                <div style={{marginLeft:'9.5em'}}>Open Campaign</div>
-                              
+                                <div style={{ marginLeft: '9.5em' }}>Open Campaign</div>
+
                             </div>
 
 
@@ -284,18 +287,18 @@ class libertyPage extends Component {
                                 justifyContent: 'space-between',
                             }}>
                                 <h3>5136</h3>
-                                <h3 style={{marginLeft:'7.5em'}}>4596</h3>
-                               
+                                <h3 style={{ marginLeft: '7.5em' }}>4596</h3>
+
                             </div>
                             <div style={{
                                 display: 'flex',
                                 flexdirection: 'row',
                                 // justifyContent: 'space-around',
-                                 fontSize: '12px'
+                                fontSize: '12px'
                             }}>
                                 <div>Online Sales</div>
-                                <div style={{marginLeft:'10.5em'}}>Store Sales</div>
-                              
+                                <div style={{ marginLeft: '10.5em' }}>Store Sales</div>
+
                             </div>
 
                         </div>
@@ -304,10 +307,89 @@ class libertyPage extends Component {
 
 
                 <div id="cards1">
-                <Card style={{ margin: '1em', width: '90%', padding: '0.5%', border: '1px solid #d5dcec', display: 'flex', color: '#354168' }}>
-                    abc
+                    <Card style={{ margin: '1em', width: '89%', padding: '1%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'row',justifyContent:'space-between', color: '#354168' }}>
+                        <Card.Body id="name13">ID</Card.Body>
+                        <Card.Body id="name13">Assignee</Card.Body>
+                        <Card.Body id="name13">Task Details</Card.Body>
+                        <Card.Body id="name13">Payment Method</Card.Body>
+                        <Card.Body id="name13">Payment Status</Card.Body>
+                        <Card.Body id="name13">Amount</Card.Body>
+                        <Card.Body id="name13">Tracking Number</Card.Body>                       
+                    </Card>
+                    <Card style={{ margin: '1em', width: '89%', padding: '1%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'row',justifyContent:'space-between', color: '#354168',marginTop: '-1em' }}>
+                        <Card.Body id="name12">#320</Card.Body>
+                        <Card.Body id="name12">Mark C.Diaz</Card.Body>
+                        <Card.Body id="name12">Support of thteme</Card.Body>
+                        <Card.Body id="name12">Credit card</Card.Body>
+                        <Button id='but'>Approved</Button>
+                        <Card.Body id="name14">$12,245</Card.Body>
+                        <Card.Body id="name12">JPBBN435893458</Card.Body>                       
+                    </Card>
+                    <Card style={{ margin: '1em', width: '89%', padding: '1%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'row',justifyContent:'space-between', color: '#354168',marginTop: '-1em' }}>
+                        <Card.Body id="name12">#321</Card.Body>
+                        <Card.Body id="name12">Jose D</Card.Body>
+                        <Card.Body id="name12">Verify your email address !</Card.Body>
+                        <Card.Body id="name12">Internet banking</Card.Body>
+                        <Button id='but1'>Pending</Button>
+                        <Card.Body id="name14">$12,245</Card.Body>
+                        <Card.Body id="name12">BDYBN435893325</Card.Body>                       
+                    </Card>
+                    <Card style={{ margin: '1em', width: '89%', padding: '1%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'row',justifyContent:'space-between', color: '#354168',marginTop: '-1em' }}>
+                        <Card.Body id="name12">#322</Card.Body>
+                        <Card.Body id="name12">Philips T</Card.Body>
+                        <Card.Body id="name12">Item support message send</Card.Body>
+                        <Card.Body id="name12">Credit card</Card.Body>
+                        <Button id='but'>Approved</Button>
+                        <Card.Body id="name14">$12,245</Card.Body>
+                        <Card.Body id="name12">JSNTN435884258</Card.Body>                       
+                    </Card>
+                    <Card style={{ margin: '1em', width: '89%', padding: '1%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'row',justifyContent:'space-between', color: '#354168',marginTop: '-1em' }}>
+                        <Card.Body id="name12">#323</Card.Body>
+                        <Card.Body id="name12">Luke Pixel</Card.Body>
+                        <Card.Body id="name12">New submission on website</Card.Body>
+                        <Card.Body id="name12">Cash on delivery</Card.Body>
+                        <Button id='but2'>Rejected</Button>
+                        <Card.Body id="name14">$12,245</Card.Body>
+                        <Card.Body id="name12">JPABT435893678</Card.Body>                       
                     </Card>
                 </div>
+
+
+                <div id="cards">
+                    <Card style={{ margin: '1em', width: '40%', padding: '2%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'column', color: '#354168',textAlign:'left' }}>
+                    <h4>The Current Chart</h4>  
+
+                  
+
+
+
+
+
+
+
+
+                    <Card.Body id="bar2"></Card.Body>
+                    <Card.Body id="names">Projects Status</Card.Body>
+                    {/* <div id='row'>
+                    <Card.Body  id='num1'>76,533</Card.Body><Card.Body>PCS</Card.Body>
+                    </div> */}
+
+                    <div style={{
+                                display: 'flex',
+                                flexdirection: 'row',
+                            
+                            }}>
+                                <h3 id='num1'>76,533</h3>
+                                <Card.Body style={{ marginTop:'3em',color: '#636363',marginLeft:'0.5em' }}>PCS</Card.Body>
+
+                            </div>
+                    
+
+                    </Card>
+                    <Card style={{ margin: '1em', width: '40%', padding: '2%', border: '1px solid #d5dcec', display: 'flex',flexDirection:'row',justifyContent:'space-between', color: '#354168' }}>
+                     pqr                  
+                    </Card>
+                    </div>
 
 
 
