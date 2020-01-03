@@ -4,6 +4,11 @@
     background-color: #EFF3F5;
 }
 
+#rows{
+    display: flex;
+    flex-direction: row
+}
+
 #col {
     display: flex;
     flex-direction: row;
@@ -11,6 +16,11 @@
     margin-left: 11%;
     background-color: white;
     margin-top: 1em;
+}
+
+#cols{
+    display: flex;
+    flex-direction: row
 }
 
 #main1 {
@@ -144,6 +154,7 @@
     flex-direction: column;
     margin: 2%;
     margin-left: 10%;
+    /* width: 940px; */
 }
 
 #cards1s {
@@ -155,6 +166,12 @@
     justify-content: 'center';
     color: '#354168';
 
+}
+
+#watch {
+    display: flex;
+    flex-direction: row;
+    color: #A8ABAD;
 }
 
 #name {
@@ -196,6 +213,15 @@
     /* width: 100px; */
     justify-content: flex-start;
     /* background-color: red; */
+}
+
+#name123 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #354168;
+    /* margin-top: 1em; */
+    text-align: start;
+    width: 100%;
 }
 
 #name14 {
@@ -261,10 +287,41 @@
     width: 98%;
 }
 
+#verbar {
+    padding: 0.05em;
+    background-color: rgb(194, 209, 254);
+    width: 0.05em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#infos1 {
+    margin: 2em;
+    margin-top: -1em;
+}
+
+#infos12 {
+    margin: 2em;
+    margin-top: 0em;
+}
+
+#infos13 {
+    margin: 2em;
+    margin-top: 1em;
+}
+
 #bar1 {
     padding: 0.5px;
     background-color: #a8abad;
-    width: 150%;
+    width: 75%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -274,6 +331,12 @@
     background-color: #d5dcec;
     width: 110%;
     margin-left: -1.5em;
+    margin-top: 1em
+}
+
+#bullet {
+    display: flex;
+    flex-direction: row
 }
 
 #but {
@@ -298,6 +361,67 @@
     height: fit-content;
 }
 
+#cardTest {
+    /* background-color: violet; */
+    margin: 1em;
+    width: 22%;
+    padding: 3%;
+    border: 1px solid #d5dcec;
+    display: flex;
+    justify-content: center;
+    color: #354168
+}
+
+#cardTest1 {
+    /* background-color: violet; */
+    margin: 1em;
+    width: 22%;
+    padding: 3%;
+    border: 1px solid #d5dcec;
+    display: flex;
+    /* justify-content: center; */
+    color: #354168
+}
+
+#cardTest2 {
+    /* background-color: violet; */
+    margin: 1em;
+    width: 23%;
+    padding: 3%;
+    border: 1px solid #d5dcec;
+    display: flex;
+    /* justify-content: center; */
+    color: #354168
+}
+
+#graph {
+    width: 100%;
+    /* height: 100px; */
+}
+
+#bottomCard1 {
+    margin: 1em;
+     width: 40%;
+      padding: 2%;
+       border: 1px solid #d5dcec;
+       display: flex;
+        flex-direction: column;
+         color: '#354168';
+     text-align: left;
+}
+
+#bottomCard2 {
+    margin: 1em;
+    margin-left: 11.5%;
+    width: 77%;
+    padding: 2%;
+    border: 1px solid #d5dcec;
+    display: flex;
+    flex-direction: column;
+    color: '#354168';
+    text-align: left;
+}
+
 @media only screen and (max-width: 1190px) {
     #main2 {
         display: none;
@@ -319,23 +443,72 @@
         /* flex-wrap: wrap; */
     }
 
+
+}
+
+@media only screen and (max-width: 1050px) {
     #cards {
         display: flex;
         flex-direction: column;
-        background-color: violet;
+        /* background-color: violet; */
+        align-items: center;
+        width: 81%
+    }
+
+    #cardTest {
+        width: 65%;
+    }
+
+    #cardTest1 {
+        width: 65%;
+    }
+
+    #cardTest2 {
+        width: 65%;
+    }
+
+    #bottomCard1{
+        width: 65%;  
+    }
+
+    #cards1 {
+        overflow-x: scroll
     }
 
 }
 
-#cardTest {
-    background-color: violet;
-    margin: 1em;
-    width: 22%;
-    padding: 3%;
-    border: 1px solid #d5dcec;
-    display: flex;
-    justify-content: center;
-    color: #354168
+@media only screen and (max-width: 800px) {
+    #cardTest {
+        width: 85%;
+    }
+
+    #cardTest1 {
+        width: 85%;
+    }
+
+    #cardTest2 {
+        width: 85%;
+    }
+    #bottomCard1{
+        width: 85%;  
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #cardTest {
+        width: 100%;
+    }
+
+    #cardTest1 {
+        width: 100%;
+    }
+
+    #cardTest2 {
+        width: 100%;
+    }
+    #bottomCard1{
+        width: 100%;  
+    }
 }
 
 @media only screen and (max-width: 570px) {
@@ -351,4 +524,8 @@
         align-items: center;
     }
 
+}
+
+.canvasjs-chart-credit {
+    display: none
 }
