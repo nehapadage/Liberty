@@ -439,7 +439,7 @@ class libertyPage extends Component {
                     }} id='boxes'> */}
                     <div id='boxes1'>
 
-                        <Card id='card' style={{ width: '80%', padding: '10%', border: '1px solid #d5dcec', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                        <Card id='card' >
                             <PeopleIcon color="primary" fontSize="large" />
                             <div style={{ marginLeft: '2em' }}>
                                 <Card.Body id='text'>New Users</Card.Body>
@@ -447,7 +447,7 @@ class libertyPage extends Component {
                             </div>
                         </Card>
 
-                        <Card style={{ width: '80%', padding: '10%', border: '1px solid #d5dcec', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                        <Card id='card'>
                             <CheckCircleOutlinedIcon color="primary" fontSize="large" />
                             <div style={{ marginLeft: '2em' }}>
                                 <Card.Body id='text'>New Feedbacks</Card.Body>
@@ -458,7 +458,7 @@ class libertyPage extends Component {
                     </div>
 
                     <div id='boxes'>
-                        <Card style={{ width: '80%', padding: '10%', border: '1px solid #d5dcec', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                        <Card id='card'>
                             <img src={require("../assets/trophy.svg")} alt="" width="25" />
                             <div style={{ marginLeft: '2em' }}>
                                 <Card.Body id='text'>Employees</Card.Body>
@@ -466,7 +466,7 @@ class libertyPage extends Component {
                             </div>
                         </Card>
 
-                        <Card style={{ width: '80%', padding: '10%', border: '1px solid #d5dcec', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                        <Card id='card'>
                             <GpsFixedIcon color="primary" fontSize="large" />
                             <div style={{ marginLeft: '2em' }}>
                                 <Card.Body id='text'>Total Sales</Card.Body>
@@ -530,21 +530,13 @@ class libertyPage extends Component {
                     </Card>
                     <Card id="cardTest2" >
                         <div className="d-flex flex-column" style={{ width: "100%" }}>
-                            <div style={{
-                                display: 'flex',
-                                flexdirection: 'row',
-                                justifyContent: 'space-between',
-                            }}>
+                            <div id='justify'>
                                 <h3>6,256</h3>
                                 <h3 style={{ marginLeft: '7.5em' }}>8569</h3>
 
                             </div>
-                            <div style={{
-                                display: 'flex',
-                                flexdirection: 'row',
-                                // justifyContent: 'space-around',
-                                fontSize: '12px'
-                            }}>
+                            <div id='justify1'
+                            >
                                 <div>Total sales</div>
                                 <div style={{ marginLeft: '9.5em' }}>Open Campaign</div>
 
@@ -556,21 +548,12 @@ class libertyPage extends Component {
 
 
 
-                            <div style={{
-                                display: 'flex',
-                                flexdirection: 'row',
-                                justifyContent: 'space-between',
-                            }}>
+                            <div id='justify'>
                                 <h3>5136</h3>
                                 <h3 style={{ marginLeft: '7.5em' }}>4596</h3>
 
                             </div>
-                            <div style={{
-                                display: 'flex',
-                                flexdirection: 'row',
-                                // justifyContent: 'space-around',
-                                fontSize: '12px'
-                            }}>
+                            <div id='justify1'>
                                 <div>Online Sales</div>
                                 <div style={{ marginLeft: '10.5em' }}>Store Sales</div>
 
@@ -702,17 +685,66 @@ class libertyPage extends Component {
                     <Card id='bottomCard2'>
                         <h3>Manage Tickets</h3>
                         <div id='cols'>
-                            <img src={require('../assets/statue-of-liberty.svg')} alt="Logo" width="100" height="80" />
+                            <img src={require('../assets/statue-of-liberty.svg')} alt="Logo" width="50" height="50" />
 
                             <div id='colText'>
                                 <div id='rows'>
-                                <div id='name13'>James : </div>
-                                <div>[#23047] Donec rutrum congue leo eget malesuada.</div>
+                                    <div id='name13'>James : </div>
+                                    <div id='name1234'>[#23047] Donec rutrum congue leo eget malesuada.</div>
                                 </div>
-                                <div>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim vivamus.</div>
+                                <div id='name12345'>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim vivamus.</div>
+                                <div id='name123456'>
+                                    <div>Last responded : 3 hours ago</div>
+                                    <div>Due in : 2 Days</div>
+                                </div>
                             </div>
-                            <div>
+                            <div style={{marginRight:'1em'}}>
+                            {/* <Button >Manage</Button> */}
+                            <h5 id="manage">Manage</h5>
+                            </div>
+                        </div>
 
+                        <div id='bar3'></div>
+
+                        <div id='cols'>
+                            <img src={require('../assets/statue-of-liberty.svg')} alt="Logo" width="50" height="50" />
+
+                            <div id='colText'>
+                                <div id='rows'>
+                                    <div id='name13'>Stella : </div>
+                                    <div id='name1234'>[#23135] Curabitur aliquet quam id dui posuere blandit.</div>
+                                </div>
+                                <div id='name12345'>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl.</div>
+                                <div id='name123456'>
+                                    <div>Last responded : 3 hours ago</div>
+                                    <div>Due in : 2 Days</div>
+                                </div>
+                            </div>
+                            <div style={{marginRight:'1em'}}>
+                            {/* <Button >Manage</Button> */}
+                            <h5 id="manage">Manage</h5>
+                            </div>
+                        </div>
+
+                        <div id='bar3'></div>
+
+                        <div id='cols'>
+                            <img src={require('../assets/statue-of-liberty.svg')} alt="Logo" width="50" height="50" />
+
+                            <div id='colText'>
+                                <div id='rows'>
+                                    <div id='name13'>John Doe :</div>
+                                    <div id='name1234'>[#23246] Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.</div>
+                                </div>
+                                <div id='name12345'>Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet.</div>
+                                <div id='name123456'>
+                                    <div>Last responded : 3 hours ago</div>
+                                    <div>Due in : 2 Days</div>
+                                </div>
+                            </div>
+                            <div style={{marginRight:'1em'}}>
+                            {/* <Button >Manage</Button> */}
+                            <h5 id="manage">Manage</h5>
                             </div>
                         </div>
                     </Card>

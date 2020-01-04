@@ -4,6 +4,22 @@
     background-color: #EFF3F5;
 }
 
+#justify{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+#justify1{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
 #rows{
     display: flex;
     flex-direction: row
@@ -14,7 +30,7 @@
     flex-direction: row;
     width: 80%;
     margin-left: 11%;
-    background-color: white;
+    /* background-color: white; */
     margin-top: 1em;
 }
 
@@ -135,11 +151,13 @@
 }
 
 #card {
-    width: '70%';
-    padding: '10%';
-    border: '1px solid #d5dcec';
-    display: 'flex';
-    flex-direction: 'row'
+    width: 95%;
+     padding: 10%;
+      border: 1px solid #d5dcec;
+       display: flex;
+        flex-direction: row;
+         justify-content: center ;
+         background-color: white;
 }
 
 #cards {
@@ -222,6 +240,55 @@
     /* margin-top: 1em; */
     text-align: start;
     width: 100%;
+}
+
+#name1234 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #354168;
+    /* margin-top: 1em; */
+    text-align: start;
+    width: 90%;
+    /* margin-left: 5.3em; */
+}
+
+#name12345 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #636363;
+    /* margin-top: 1em; */
+    text-align: start;
+    width: 80%;
+    /* margin-left: 5.7em; */
+}
+
+#name123456 {
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: #A8ABAD;
+    margin-top: 1em;
+    text-align: start;
+    width: 80%;
+    /* margin-left: 5.7em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#manage{
+    color: white;
+    font-size: 15px;
+    background-color: #3940e2;
+    padding: 15%;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* margin-left: -8%; */
+    border-radius: 4px;
+    margin-top: 1em;
+}
+
+#colText{
+    margin-left: 2em;
 }
 
 #name14 {
@@ -310,7 +377,7 @@
 
 #infos12 {
     margin: 2em;
-    margin-top: 0em;
+    margin-top: 1.3em;
 }
 
 #infos13 {
@@ -332,6 +399,15 @@
     width: 110%;
     margin-left: -1.5em;
     margin-top: 1em
+}
+
+#bar3 {
+    padding: 0.5px;
+    background-color: #d5dcec;
+    width: 100%;
+    /* margin-left: -1.5em; */
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #bullet {
@@ -444,6 +520,19 @@
     }
 
 
+}
+
+
+@media only screen and (max-width: 750px) {
+    #cols{
+        flex-direction: column;
+    }
+    #colText{
+        margin-left: 0em;
+    }
+    #manage{
+        padding: 0.5em;
+    }
 }
 
 @media only screen and (max-width: 1050px) {
