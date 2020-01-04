@@ -369,7 +369,7 @@ class libertyPage extends Component {
 
                                     <img src={require('../assets/profile.png')} alt="Logo" width="25" height="25" />
 
-                                    <MenuIcon className="menu" />
+                                    <MenuIcon id="menu" />
 
                                 </div>
                             </div>
@@ -742,7 +742,7 @@ class libertyPage extends Component {
                                     <div>Due in : 2 Days</div>
                                 </div>
                             </div>
-                            <div style={{marginRight:'1em'}}>
+                            <div style={{marginRight: '1em'}}>
                             {/* <Button >Manage</Button> */}
                             <h5 id="manage">Manage</h5>
                             </div>

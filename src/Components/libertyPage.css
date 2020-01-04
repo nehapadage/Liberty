@@ -36,7 +36,8 @@
 
 #cols{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #main1 {
@@ -145,6 +146,10 @@
     /* flex-wrap: wrap; */
 }
 
+#menu{
+    display: none
+}
+
 
 .MenuIcon {
     display: none;
@@ -161,10 +166,18 @@
 }
 
 #cards {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     margin: 2%;
+    margin-left: 10%; */
+
+    display: flex;
+    flex-direction: row;
+    /* margin: 2%; */
     margin-left: 10%;
+    width: 84%;
+    /* background-color: red; */
+    justify-content: space-between;
 }
 
 #cards1 {
@@ -288,7 +301,7 @@
 }
 
 #colText{
-    margin-left: 2em;
+    width: 80%;
 }
 
 #name14 {
@@ -507,6 +520,10 @@
         display: visible;
     }
 
+    #menu{
+        display: visible
+    }
+
     #boxes {
         display: flex;
         flex-direction: column;
@@ -545,19 +562,20 @@
     }
 
     #cardTest {
-        width: 65%;
+        width:96%;
     }
 
     #cardTest1 {
-        width: 65%;
+        width: 96%;
     }
 
     #cardTest2 {
-        width: 65%;
+        width: 96%;
     }
 
     #bottomCard1{
-        width: 65%;  
+        width: 96%;  
+        margin-left: 5%;
     }
 
     #cards1 {
@@ -568,18 +586,18 @@
 
 @media only screen and (max-width: 800px) {
     #cardTest {
-        width: 85%;
+        width: 96%;
     }
 
     #cardTest1 {
-        width: 85%;
+        width: 96%;
     }
 
     #cardTest2 {
-        width: 85%;
+        width: 96%;
     }
     #bottomCard1{
-        width: 85%;  
+        width: 96%;  
     }
 }
 
